@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Systems Visualization</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
-<body>
-    <h1>Star Systems Visualization</h1>
-    <div id="plots">
-        {{ plots | safe }}
-    </div>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Star Systems Visualization</title>
+
+
+{% endblock %}
+
+{% block body %}
+<h1>Star Systems Visualization</h1>
+<a href="/Kepler-62">Kepler-62</a>
+<br>
+<a href="/Teegarden's Star">Teegarden's Star</a>
+<br>
+<a href="/Proxima Centauri">Proxima Centauri</a>
+<br>
+<a href="/TOI-700">TOI-700</a>
+<br>
+<a href="/TRAPPIST-1">TRAPPIST-1</a>
+
+{% endblock %}
 
