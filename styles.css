@@ -10,9 +10,12 @@ h1 {
 }
 
 #plots {
+    display: flex; /*removing this makes it expand horizontally*/
+    flex-wrap: wrap; /*removing this makes it expand horizontally*/
+    justify-content: center; /*removing this makes it expand horizontally*/
     width: 100%;
-    height: 80vh;
-    margin: 0 auto;
+    height: 80vh; 
+    margin: 0 auto; 
 }
 
 .plot {
