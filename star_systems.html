@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>{{ star_system }} - Details</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="mt-5">{{ star_system }} Details</h1>
+
+    <h3>Information:</h3>
+    <p><strong>Star Name:</strong> {{ star_info['S_NAME'] }}</p>
+    <p><strong>Distance:</strong> {{ star_info['S_DISTANCE'] }} light years</p>
+    <p><strong>Mass:</strong> {{ star_info['S_MASS'] }} solar masses</p>
+    <!-- Add more fields as necessary -->
+
+    <h3>Plots:</h3>
+    <div>
+        {{ plots | safe }}  <!-- Render the plots here -->
+    </div>
+
+    <a href="{{ url_for('show_star_system_vis', star_system=star_system) }}" class="btn btn-primary mt-3">
+        Visualize {{ star_system }}
+    </a>
+
+    <a href="/" class="btn btn-secondary mt-3">Back to Star Systems List</a>  <!-- Navigation to the main page -->
+</div>
+{% endblock %}

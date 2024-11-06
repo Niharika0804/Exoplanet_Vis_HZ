@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>{{ star_system }} Visualization</title>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<h1>{{ star_system }} Visualization</h1>
+<div id="plots">
+    {{ plots | safe }}
+</div>
+<a href="/" class="btn btn-secondary mt-3">Back to Star Systems List</a>
+{% endblock %}
