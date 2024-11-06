@@ -1,22 +1,29 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Star Systems Visualization</title>
-
-
+<title>Exoplanet Star Systems Visualization</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 {% endblock %}
 
 {% block body %}
-<h1>Star Systems Visualization</h1>
-<a href="/Kepler-62">Kepler-62</a>
-<br>
-<a href="/Teegarden's Star">Teegarden's Star</a>
-<br>
-<a href="/Proxima Centauri">Proxima Centauri</a>
-<br>
-<a href="/TOI-700">TOI-700</a>
-<br>
-<a href="/TRAPPIST-1">TRAPPIST-1</a>
+
+<div class="container">
+    <h1>Exoplanet Star Systems Visualization</h1>
+    <p>Explore different exoplanetary systems and their habitability!</p>
+    <div class="links">
+        <a class="link" href="/Kepler-62">Kepler-62</a>
+        <a class="link" href="/Teegarden's Star">Teegarden's Star</a>
+        <a class="link" href="/Proxima Centauri">Proxima Centauri</a>
+        <a class="link" href="/TOI-700">TOI-700</a>
+        <a class="link" href="/TRAPPIST-1">TRAPPIST-1</a>
+
+    </div>
+</div>
+
+
 
 {% endblock %}
+
+
+
 
