@@ -5,17 +5,13 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 #plots {
     display: flex; /*removing this makes it expand horizontally*/
     flex-wrap: wrap; /*removing this makes it expand horizontally*/
     justify-content: center; /*removing this makes it expand horizontally*/
     width: 100%;
-    height: 80vh; 
-    margin: 0 auto; 
+    height: 80vh;
+    margin: 0 auto;
 }
 
 .plot {
@@ -23,3 +19,76 @@ h1 {
     width: 90%;
     max-width: 600px;
 }
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center items in the navbar */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #45a049;
+}
+
+#info-box {
+    display: none; /* Hidden by default */
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it appears above other elements */
+    max-width: 200px;
+}
+
+
+
